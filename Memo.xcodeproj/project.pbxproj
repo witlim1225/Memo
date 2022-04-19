@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		433FC215280E37FA00513EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC214280E37FA00513EFD /* AppDelegate.swift */; };
 		433FC217280E37FA00513EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC216280E37FA00513EFD /* SceneDelegate.swift */; };
-		433FC219280E37FA00513EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC218280E37FA00513EFD /* ViewController.swift */; };
 		433FC21C280E37FA00513EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433FC21A280E37FA00513EFD /* Main.storyboard */; };
 		433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433FC21D280E37FA00513EFD /* Memo.xcdatamodeld */; };
 		433FC221280E37FA00513EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433FC220280E37FA00513EFD /* Assets.xcassets */; };
 		433FC224280E37FA00513EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433FC222280E37FA00513EFD /* LaunchScreen.storyboard */; };
+		433FC22E280E4EBE00513EFD /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC22D280E4EBE00513EFD /* MemoListVC.swift */; };
+		433FC230280E4EDC00513EFD /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC22F280E4EDC00513EFD /* MemoFormVC.swift */; };
+		433FC232280E4EE700513EFD /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC231280E4EE600513EFD /* MemoReadVC.swift */; };
+		433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC233280E4F2B00513EFD /* MemoCell.swift */; };
+		433FC236280E4F9800513EFD /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC235280E4F9800513EFD /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		433FC211280E37FA00513EFD /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433FC214280E37FA00513EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433FC216280E37FA00513EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		433FC218280E37FA00513EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		433FC21B280E37FA00513EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433FC21E280E37FA00513EFD /* Memo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memo.xcdatamodel; sourceTree = "<group>"; };
 		433FC220280E37FA00513EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433FC223280E37FA00513EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433FC225280E37FA00513EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433FC22D280E4EBE00513EFD /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		433FC22F280E4EDC00513EFD /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		433FC231280E4EE600513EFD /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		433FC233280E4F2B00513EFD /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		433FC235280E4F9800513EFD /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,12 @@
 			children = (
 				433FC214280E37FA00513EFD /* AppDelegate.swift */,
 				433FC216280E37FA00513EFD /* SceneDelegate.swift */,
-				433FC218280E37FA00513EFD /* ViewController.swift */,
 				433FC21A280E37FA00513EFD /* Main.storyboard */,
+				433FC235280E4F9800513EFD /* MemoData.swift */,
+				433FC233280E4F2B00513EFD /* MemoCell.swift */,
+				433FC22D280E4EBE00513EFD /* MemoListVC.swift */,
+				433FC22F280E4EDC00513EFD /* MemoFormVC.swift */,
+				433FC231280E4EE600513EFD /* MemoReadVC.swift */,
 				433FC220280E37FA00513EFD /* Assets.xcassets */,
 				433FC222280E37FA00513EFD /* LaunchScreen.storyboard */,
 				433FC225280E37FA00513EFD /* Info.plist */,
@@ -141,10 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433FC219280E37FA00513EFD /* ViewController.swift in Sources */,
 				433FC215280E37FA00513EFD /* AppDelegate.swift in Sources */,
+				433FC236280E4F9800513EFD /* MemoData.swift in Sources */,
+				433FC230280E4EDC00513EFD /* MemoFormVC.swift in Sources */,
+				433FC232280E4EE700513EFD /* MemoReadVC.swift in Sources */,
 				433FC217280E37FA00513EFD /* SceneDelegate.swift in Sources */,
+				433FC22E280E4EBE00513EFD /* MemoListVC.swift in Sources */,
 				433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */,
+				433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -297,6 +313,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
