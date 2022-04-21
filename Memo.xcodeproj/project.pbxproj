@@ -18,6 +18,10 @@
 		433FC232280E4EE700513EFD /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC231280E4EE600513EFD /* MemoReadVC.swift */; };
 		433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC233280E4F2B00513EFD /* MemoCell.swift */; };
 		433FC236280E4F9800513EFD /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC235280E4F9800513EFD /* MemoData.swift */; };
+		433FC36E28110FE500513EFD /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC36D28110FE500513EFD /* CSLogButton.swift */; };
+		433FC373281110E300513EFD /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 433FC370281110E300513EFD /* button-bg.png */; };
+		433FC374281110E300513EFD /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433FC371281110E300513EFD /* memo-background@2x.png */; };
+		433FC375281110E300513EFD /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433FC372281110E300513EFD /* warning-icon-60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		433FC231280E4EE600513EFD /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		433FC233280E4F2B00513EFD /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		433FC235280E4F9800513EFD /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		433FC36D28110FE500513EFD /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
+		433FC370281110E300513EFD /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
+		433FC371281110E300513EFD /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
+		433FC372281110E300513EFD /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +74,11 @@
 		433FC213280E37FA00513EFD /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				433FC36F281110C900513EFD /* Resources */,
 				433FC214280E37FA00513EFD /* AppDelegate.swift */,
 				433FC216280E37FA00513EFD /* SceneDelegate.swift */,
 				433FC21A280E37FA00513EFD /* Main.storyboard */,
+				433FC36D28110FE500513EFD /* CSLogButton.swift */,
 				433FC235280E4F9800513EFD /* MemoData.swift */,
 				433FC233280E4F2B00513EFD /* MemoCell.swift */,
 				433FC22D280E4EBE00513EFD /* MemoListVC.swift */,
@@ -80,6 +90,16 @@
 				433FC21D280E37FA00513EFD /* Memo.xcdatamodeld */,
 			);
 			path = Memo;
+			sourceTree = "<group>";
+		};
+		433FC36F281110C900513EFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				433FC370281110E300513EFD /* button-bg.png */,
+				433FC371281110E300513EFD /* memo-background@2x.png */,
+				433FC372281110E300513EFD /* warning-icon-60@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433FC374281110E300513EFD /* memo-background@2x.png in Resources */,
 				433FC224280E37FA00513EFD /* LaunchScreen.storyboard in Resources */,
 				433FC221280E37FA00513EFD /* Assets.xcassets in Resources */,
+				433FC373281110E300513EFD /* button-bg.png in Resources */,
+				433FC375281110E300513EFD /* warning-icon-60@2x.png in Resources */,
 				433FC21C280E37FA00513EFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433FC36E28110FE500513EFD /* CSLogButton.swift in Sources */,
 				433FC215280E37FA00513EFD /* AppDelegate.swift in Sources */,
 				433FC236280E4F9800513EFD /* MemoData.swift in Sources */,
 				433FC230280E4EDC00513EFD /* MemoFormVC.swift in Sources */,

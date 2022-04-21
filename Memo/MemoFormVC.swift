@@ -18,13 +18,37 @@ class MemoFormVC: UIViewController {
         super.viewDidLoad()
 
         self.contents.delegate = self
+        
+        // 배경 이미지 설정
+        let bgImage = UIImage(named: "memo-background.png")!
+        self.view.backgroundColor = UIColor(patternImage: bgImage)
+        
+        // 텍스트뷰의 기본 속성
+        self.contents.layer.borderWidth = 0
+        self.contents.layer.borderColor = UIColor.clear.cgColor
+        self.contents.backgroundColor = UIColor.clear
+        
+        // 줄 간격
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 9
+        self.contents.attributedText = NSAttributedString(string: " ", attributes: [.paragraphStyle: style])
+        self.contents.text = ""
     }
 
     @IBAction func save(_ sender: Any) {
+        // 경고창에 사용될 컨텐츠 뷰 컨트롤러 구성
+        let alertVC = UIViewController()
+        let iconImage = UIImage(named: "warning-icon-60")
+        alertVC.view = UIImageView(image: iconImage)
+        alertVC.preferredContentSize = iconImage?.size ?? CGSize.zero
+        
+        
         guard self.contents.text?.isEmpty == false else {
             let alert = UIAlertController(title: nil, message: "내용을 입력해주세요", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "OK", style: .cancel)
             alert.addAction(cancelAction)
+            
+            alert.setValue(alertVC, forKey: "contentViewController")
             
             self.present(alert, animated: true)
             return
@@ -56,6 +80,15 @@ class MemoFormVC: UIViewController {
         picker.allowsEditing = true // 이미지 편집 허용
         
         self.present(picker, animated: true) // 화면 표시
+    }
+    
+    // 화면 터치시 네비게이션 바 사라지도록
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let bar = self.navigationController?.navigationBar
+        let ts = TimeInterval(0.3)
+        UIView.animate(withDuration: ts) {
+            bar?.alpha = (bar?.alpha == 0 ? 1 : 0)
+        }
     }
 }
 
