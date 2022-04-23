@@ -34,6 +34,7 @@
 		433FC3E728114B9800513EFD /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = 433FC3DE28114B9800513EFD /* icon05.png */; };
 		433FC3E928114DCC00513EFD /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC3E828114DCC00513EFD /* SideBarVC.swift */; };
 		433FC3EB2811530200513EFD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC3EA2811530200513EFD /* ProfileVC.swift */; };
+		433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC44C281336B900513EFD /* UserInfoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		433FC3DE28114B9800513EFD /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon05.png; sourceTree = "<group>"; };
 		433FC3E828114DCC00513EFD /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		433FC3EA2811530200513EFD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		433FC44C281336B900513EFD /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				433FC3E828114DCC00513EFD /* SideBarVC.swift */,
 				433FC22F280E4EDC00513EFD /* MemoFormVC.swift */,
 				433FC231280E4EE600513EFD /* MemoReadVC.swift */,
+				433FC44C281336B900513EFD /* UserInfoManager.swift */,
 				433FC220280E37FA00513EFD /* Assets.xcassets */,
 				433FC222280E37FA00513EFD /* LaunchScreen.storyboard */,
 				433FC225280E37FA00513EFD /* Info.plist */,
@@ -237,6 +240,7 @@
 				433FC22E280E4EBE00513EFD /* MemoListVC.swift in Sources */,
 				433FC3D528114B3400513EFD /* SWRevealViewController.m in Sources */,
 				433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */,
+				433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */,
 				433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

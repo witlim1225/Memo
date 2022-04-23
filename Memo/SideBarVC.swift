@@ -27,6 +27,9 @@ class SideBarVC: UITableViewController {
     let emailLabel = UILabel()
     let profileImage = UIImageView()
     
+    // 개인정보 관리 매니저
+    let userInfo = UserInfoManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 테이블 뷰의 헤더 역할을 할 뷰를 정의한다.
@@ -38,7 +41,7 @@ class SideBarVC: UITableViewController {
         self.tableView.tableHeaderView = headerView
         
         self.nameLabel.frame = CGRect(x: 70, y: 15, width: 100, height: 30) // 위치와 크기를 정의
-        self.nameLabel.text = "태원씨"
+//        self.nameLabel.text = "태원씨"
         self.nameLabel.textColor = .white
         self.nameLabel.font = UIFont.boldSystemFont(ofSize: 15)
         self.nameLabel.backgroundColor = .clear
@@ -47,7 +50,7 @@ class SideBarVC: UITableViewController {
         
         self.emailLabel.frame = CGRect(x: 70, y: 30, width: 100, height: 30)
         
-        self.emailLabel.text = "witlim1225@gmail.com"
+//        self.emailLabel.text = "witlim1225@gmail.com"
         self.emailLabel.textColor = .white
         self.emailLabel.font = UIFont.systemFont(ofSize: 11)
         self.emailLabel.backgroundColor = .clear
@@ -55,8 +58,8 @@ class SideBarVC: UITableViewController {
         headerView.addSubview(emailLabel)
         
         // 기본 이미지를 구현한다.
-        let defaultProfile = UIImage(named: "account.jpg")
-        self.profileImage.image = defaultProfile
+//        let defaultProfile = UIImage(named: "account.jpg")
+//        self.profileImage.image = defaultProfile
         self.profileImage.frame = CGRect(x: 10, y: 10, width: 50, height: 50)
         
         // 이미지 둥글게
@@ -65,6 +68,14 @@ class SideBarVC: UITableViewController {
         self.profileImage.layer.masksToBounds = true
         
         view.addSubview(self.profileImage)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //사이드바가 표시될 때마다 로그인 정보를 읽어와 갱신한다.
+        self.nameLabel.text = self.userInfo.name ?? "Guest"
+        self.emailLabel.text = self.userInfo.account ?? ""
+        self.profileImage.image = self.userInfo.profile
     }
     
     
