@@ -35,6 +35,10 @@
 		433FC3E928114DCC00513EFD /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC3E828114DCC00513EFD /* SideBarVC.swift */; };
 		433FC3EB2811530200513EFD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC3EA2811530200513EFD /* ProfileVC.swift */; };
 		433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC44C281336B900513EFD /* UserInfoManager.swift */; };
+		433FC44F28145DE300513EFD /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433FC44E28145DE300513EFD /* Tutorial.storyboard */; };
+		433FC4512814600C00513EFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC4502814600C00513EFD /* Utils.swift */; };
+		433FC453281460AD00513EFD /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC452281460AD00513EFD /* TutorialContentsVC.swift */; };
+		433FC456281461F400513EFD /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC455281461F400513EFD /* TutorialMasterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		433FC3E828114DCC00513EFD /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		433FC3EA2811530200513EFD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		433FC44C281336B900513EFD /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		433FC44E28145DE300513EFD /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		433FC4502814600C00513EFD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		433FC452281460AD00513EFD /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		433FC455281461F400513EFD /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 				433FC231280E4EE600513EFD /* MemoReadVC.swift */,
 				433FC44C281336B900513EFD /* UserInfoManager.swift */,
 				433FC220280E37FA00513EFD /* Assets.xcassets */,
+				433FC454281460D000513EFD /* Turorial */,
+				433FC4502814600C00513EFD /* Utils.swift */,
 				433FC222280E37FA00513EFD /* LaunchScreen.storyboard */,
 				433FC225280E37FA00513EFD /* Info.plist */,
 				433FC21D280E37FA00513EFD /* Memo.xcdatamodeld */,
@@ -143,6 +153,16 @@
 				433FC372281110E300513EFD /* warning-icon-60@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		433FC454281460D000513EFD /* Turorial */ = {
+			isa = PBXGroup;
+			children = (
+				433FC44E28145DE300513EFD /* Tutorial.storyboard */,
+				433FC455281461F400513EFD /* TutorialMasterVC.swift */,
+				433FC452281460AD00513EFD /* TutorialContentsVC.swift */,
+			);
+			path = Turorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +238,7 @@
 				433FC373281110E300513EFD /* button-bg.png in Resources */,
 				433FC3E628114B9800513EFD /* icon01.png in Resources */,
 				433FC375281110E300513EFD /* warning-icon-60@2x.png in Resources */,
+				433FC44F28145DE300513EFD /* Tutorial.storyboard in Resources */,
 				433FC21C280E37FA00513EFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,15 +253,18 @@
 				433FC3EB2811530200513EFD /* ProfileVC.swift in Sources */,
 				433FC36E28110FE500513EFD /* CSLogButton.swift in Sources */,
 				433FC3E928114DCC00513EFD /* SideBarVC.swift in Sources */,
+				433FC4512814600C00513EFD /* Utils.swift in Sources */,
 				433FC215280E37FA00513EFD /* AppDelegate.swift in Sources */,
 				433FC236280E4F9800513EFD /* MemoData.swift in Sources */,
 				433FC230280E4EDC00513EFD /* MemoFormVC.swift in Sources */,
 				433FC232280E4EE700513EFD /* MemoReadVC.swift in Sources */,
 				433FC217280E37FA00513EFD /* SceneDelegate.swift in Sources */,
 				433FC22E280E4EBE00513EFD /* MemoListVC.swift in Sources */,
+				433FC456281461F400513EFD /* TutorialMasterVC.swift in Sources */,
 				433FC3D528114B3400513EFD /* SWRevealViewController.m in Sources */,
 				433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */,
 				433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */,
+				433FC453281460AD00513EFD /* TutorialContentsVC.swift in Sources */,
 				433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
