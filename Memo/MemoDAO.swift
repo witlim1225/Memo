@@ -16,7 +16,7 @@ class MemoDAO {
     }()
     
     // 저장된 메모(전체)를 불러오는 메소드
-    func fetch() -> [MemoData] {
+    func fetch(keyword text: String? = nil) -> [MemoData] {
         var memoList = [MemoData]()
         
         // 요청 객체 생성
@@ -25,6 +25,11 @@ class MemoDAO {
         // 최신 글 순으로 정렬하도록 정렬 객체 생성
         let regdateDesc = NSSortDescriptor(key: "regdate", ascending: false)
         fetchRequest.sortDescriptors = [regdateDesc]
+
+        // 검색 키워드가 있을 경우 검색 조건 추가
+        if let t = text, t.isEmpty == false {
+            fetchRequest.predicate = NSPredicate(format: "contents CONTAINS[c] %@", t)
+        }
         
         do {
             let resultSet = try self.context.fetch(fetchRequest)

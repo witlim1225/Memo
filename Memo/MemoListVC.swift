@@ -9,12 +9,16 @@ import UIKit
 
 class MemoListVC: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     // 앱 델리게이트 객체의 참조 정보
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     lazy var memoDAO = MemoDAO()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 검색바의 키보드에서 리턴키가 핳ㅇ상 활성화 되어 있돋록 처리
+        searchBar.enablesReturnKeyAutomatically = false
         // SWRevealViewController 라이브러리의 revealViewController 객체를 읽어온다.
         if let revealVC = self.revealViewController() {
             // 바 버튼 아이템 객체를 정의한다.
@@ -101,5 +105,16 @@ class MemoListVC: UITableViewController {
             self.appDelegate.memolist.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+}
+
+extension MemoListVC: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // 검색 바에 입력한 키워드를 가져온다.
+        let keyword = searchBar.text
+        
+        // 키워드를 적용하여 데이터를 검색하고, 테이블 뷰를 갱신한다.
+        self.appDelegate.memolist = self.memoDAO.fetch(keyword: keyword)
+        self.tableView.reloadData()
     }
 }
