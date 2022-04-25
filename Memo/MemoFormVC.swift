@@ -10,6 +10,7 @@ import UIKit
 class MemoFormVC: UIViewController {
 
     var subject: String!
+    lazy var memoDAO = MemoDAO()
     
     @IBOutlet weak var contents: UITextView!
     @IBOutlet weak var preview: UIImageView!
@@ -63,8 +64,11 @@ class MemoFormVC: UIViewController {
         data.regdate = Date()
         
         //앱 델리게이트 객체를 읽어온 다음, memoList 배열에 객체를 추가한다.
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.memolist.append(data)
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.memolist.append(data)
+        
+        // 코어 데이터에 메모데이터를 추가한다.
+        self.memoDAO.insert(data)
         
         // 작성폼 화면을 종료하고, 이전 화면으로 되돌아간다.
         _ = self.navigationController?.popViewController(animated: true)

@@ -39,6 +39,7 @@
 		433FC4512814600C00513EFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC4502814600C00513EFD /* Utils.swift */; };
 		433FC453281460AD00513EFD /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC452281460AD00513EFD /* TutorialContentsVC.swift */; };
 		433FC456281461F400513EFD /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC455281461F400513EFD /* TutorialMasterVC.swift */; };
+		433FC5582816812700513EFD /* MemoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC5572816812700513EFD /* MemoDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		433FC4502814600C00513EFD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		433FC452281460AD00513EFD /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
 		433FC455281461F400513EFD /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
+		433FC5572816812700513EFD /* MemoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +113,14 @@
 			isa = PBXGroup;
 			children = (
 				433FC36F281110C900513EFD /* Resources */,
-				433FC3D328114B3300513EFD /* SWRevealViewController.h */,
-				433FC3D428114B3300513EFD /* SWRevealViewController.m */,
+				433FC55628167EB300513EFD /* SWReveal */,
 				433FC214280E37FA00513EFD /* AppDelegate.swift */,
 				433FC216280E37FA00513EFD /* SceneDelegate.swift */,
 				433FC21A280E37FA00513EFD /* Main.storyboard */,
 				433FC3EA2811530200513EFD /* ProfileVC.swift */,
 				433FC36D28110FE500513EFD /* CSLogButton.swift */,
 				433FC235280E4F9800513EFD /* MemoData.swift */,
+				433FC5572816812700513EFD /* MemoDAO.swift */,
 				433FC233280E4F2B00513EFD /* MemoCell.swift */,
 				433FC22D280E4EBE00513EFD /* MemoListVC.swift */,
 				433FC3E828114DCC00513EFD /* SideBarVC.swift */,
@@ -163,6 +165,15 @@
 				433FC452281460AD00513EFD /* TutorialContentsVC.swift */,
 			);
 			path = Turorial;
+			sourceTree = "<group>";
+		};
+		433FC55628167EB300513EFD /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				433FC3D328114B3300513EFD /* SWRevealViewController.h */,
+				433FC3D428114B3300513EFD /* SWRevealViewController.m */,
+			);
+			path = SWReveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				433FC217280E37FA00513EFD /* SceneDelegate.swift in Sources */,
 				433FC22E280E4EBE00513EFD /* MemoListVC.swift in Sources */,
 				433FC456281461F400513EFD /* TutorialMasterVC.swift in Sources */,
+				433FC5582816812700513EFD /* MemoDAO.swift in Sources */,
 				433FC3D528114B3400513EFD /* SWRevealViewController.m in Sources */,
 				433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */,
 				433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */,
