@@ -40,9 +40,14 @@
 		433FC453281460AD00513EFD /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC452281460AD00513EFD /* TutorialContentsVC.swift */; };
 		433FC456281461F400513EFD /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC455281461F400513EFD /* TutorialMasterVC.swift */; };
 		433FC5582816812700513EFD /* MemoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC5572816812700513EFD /* MemoDAO.swift */; };
+		433FC5B228178EB100513EFD /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC5B128178EB100513EFD /* JoinVC.swift */; };
+		433FC5B42817C2C000513EFD /* TokenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC5B32817C2C000513EFD /* TokenUtils.swift */; };
+		433FC5B6281824B700513EFD /* DataSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FC5B5281824B700513EFD /* DataSync.swift */; };
+		A83EE1AA44281A2A39E86522 /* Pods_Memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05015E8741937F9D2A105EC9 /* Pods_Memo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05015E8741937F9D2A105EC9 /* Pods_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433FC211280E37FA00513EFD /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433FC214280E37FA00513EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433FC216280E37FA00513EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +85,11 @@
 		433FC452281460AD00513EFD /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
 		433FC455281461F400513EFD /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 		433FC5572816812700513EFD /* MemoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDAO.swift; sourceTree = "<group>"; };
+		433FC5B128178EB100513EFD /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		433FC5B32817C2C000513EFD /* TokenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenUtils.swift; sourceTree = "<group>"; };
+		433FC5B5281824B700513EFD /* DataSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSync.swift; sourceTree = "<group>"; };
+		C75584E9F88CFC9F1CCFB699 /* Pods-Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.release.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.release.xcconfig"; sourceTree = "<group>"; };
+		FB5DCFBCF458B9B060CF6F47 /* Pods-Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.debug.xcconfig"; path = "Target Support Files/Pods-Memo/Pods-Memo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83EE1AA44281A2A39E86522 /* Pods_Memo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C17C68EFAF7EA467C7560B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB5DCFBCF458B9B060CF6F47 /* Pods-Memo.debug.xcconfig */,
+				C75584E9F88CFC9F1CCFB699 /* Pods-Memo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1F79D7D52FB8E8D737699FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05015E8741937F9D2A105EC9 /* Pods_Memo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		433FC208280E37FA00513EFD = {
 			isa = PBXGroup;
 			children = (
 				433FC213280E37FA00513EFD /* Memo */,
 				433FC212280E37FA00513EFD /* Products */,
+				1C17C68EFAF7EA467C7560B9 /* Pods */,
+				1F79D7D52FB8E8D737699FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +147,7 @@
 				433FC214280E37FA00513EFD /* AppDelegate.swift */,
 				433FC216280E37FA00513EFD /* SceneDelegate.swift */,
 				433FC21A280E37FA00513EFD /* Main.storyboard */,
+				433FC5B128178EB100513EFD /* JoinVC.swift */,
 				433FC3EA2811530200513EFD /* ProfileVC.swift */,
 				433FC36D28110FE500513EFD /* CSLogButton.swift */,
 				433FC235280E4F9800513EFD /* MemoData.swift */,
@@ -130,9 +161,11 @@
 				433FC220280E37FA00513EFD /* Assets.xcassets */,
 				433FC454281460D000513EFD /* Turorial */,
 				433FC4502814600C00513EFD /* Utils.swift */,
+				433FC5B32817C2C000513EFD /* TokenUtils.swift */,
 				433FC222280E37FA00513EFD /* LaunchScreen.storyboard */,
 				433FC225280E37FA00513EFD /* Info.plist */,
 				433FC21D280E37FA00513EFD /* Memo.xcdatamodeld */,
+				433FC5B5281824B700513EFD /* DataSync.swift */,
 				433FC3D228114B3300513EFD /* Memo-Bridging-Header.h */,
 			);
 			path = Memo;
@@ -183,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 433FC228280E37FA00513EFD /* Build configuration list for PBXNativeTarget "Memo" */;
 			buildPhases = (
+				F959C490BDDC7E61AE3C850C /* [CP] Check Pods Manifest.lock */,
 				433FC20D280E37FA00513EFD /* Sources */,
 				433FC20E280E37FA00513EFD /* Frameworks */,
 				433FC20F280E37FA00513EFD /* Resources */,
+				25C6CE2A7924ECD4289A782F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,12 +291,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25C6CE2A7924ECD4289A782F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memo/Pods-Memo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memo/Pods-Memo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memo/Pods-Memo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F959C490BDDC7E61AE3C850C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		433FC20D280E37FA00513EFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				433FC3EB2811530200513EFD /* ProfileVC.swift in Sources */,
+				433FC5B42817C2C000513EFD /* TokenUtils.swift in Sources */,
 				433FC36E28110FE500513EFD /* CSLogButton.swift in Sources */,
 				433FC3E928114DCC00513EFD /* SideBarVC.swift in Sources */,
 				433FC4512814600C00513EFD /* Utils.swift in Sources */,
@@ -275,6 +353,8 @@
 				433FC5582816812700513EFD /* MemoDAO.swift in Sources */,
 				433FC3D528114B3400513EFD /* SWRevealViewController.m in Sources */,
 				433FC21F280E37FA00513EFD /* Memo.xcdatamodeld in Sources */,
+				433FC5B228178EB100513EFD /* JoinVC.swift in Sources */,
+				433FC5B6281824B700513EFD /* DataSync.swift in Sources */,
 				433FC44D281336B900513EFD /* UserInfoManager.swift in Sources */,
 				433FC453281460AD00513EFD /* TutorialContentsVC.swift in Sources */,
 				433FC234280E4F2B00513EFD /* MemoCell.swift in Sources */,
@@ -419,6 +499,7 @@
 		};
 		433FC229280E37FA00513EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5DCFBCF458B9B060CF6F47 /* Pods-Memo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +532,7 @@
 		};
 		433FC22A280E37FA00513EFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75584E9F88CFC9F1CCFB699 /* Pods-Memo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
